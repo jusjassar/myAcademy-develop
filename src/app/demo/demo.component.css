@@ -1,6 +1,7 @@
 .btn-border{
     border-radius:10px;
     border:2px solid transparent;
+    margin: 5px;
 }
 .btn-size{
     width: 150px;
