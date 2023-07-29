@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 .class1{
 color:blue;
 background-color: antiquewhite;
@@ -22,4 +23,9 @@ font-size: larger;
 .container{
     margin:auto;
     width: 50%;
+
 }
+
+}
+
+
