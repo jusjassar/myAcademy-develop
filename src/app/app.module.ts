@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AppClassDirective } from './app-class-directive.directive';
+import { myBorderDirective } from './border-class.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppClassDirective
+    AppClassDirective,
+    myBorderDirective
   ],
   imports: [
     BrowserModule
