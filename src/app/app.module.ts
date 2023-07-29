@@ -6,13 +6,15 @@ import { myBorderDirective } from './customDirectives/border-class.directive';
 
 import { DemoComponent } from './demo/demo.component';
 import { HostBindingDirective } from './customDirectives/host-binding.directive';
+import { TitleColorDirective } from './customDirectives/hostBinding.directive';
 @NgModule({
   declarations: [
     AppComponent,
     AppClassDirective,
     myBorderDirective,
     DemoComponent,
-    HostBindingDirective
+    HostBindingDirective,
+    TitleColorDirective
 
   ],
 

@@ -1,6 +1,13 @@
 <div class="container">
-    <h2>{{title}}</h2>
-    <button class="btn-border btn-size" [style]="bgclr">{{btn}}</button>
+    <h6>Component Selector{{selector}}</h6>
+    <h2 
+    titleColor
+    [titleColorFromParent]="titleColorFromParent"
+    ngClass="{redClass:conditionRed,blueClass:conditionBlue}">{{title}}</h2>
+    <button
+    titleColor 
+    [btnTxtClrFromParent]="btnTxtClr"
+    class="btn-border btn-size" [style]="bgclr">{{btn}}</button>
 </div>
 
 

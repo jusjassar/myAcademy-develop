@@ -10,16 +10,17 @@ import { Component,HostBinding,Input, OnInit } from "@angular/core";
 export class DemoComponent implements OnInit {
 @Input() title:string='';
 @Input() btn:string='';
-@Input() colorFromParent:string='';
+@Input() titleColorFromParent:string='';
 @Input() bgclr:string='';
-
+selector:string='Demo Component';
+@Input() btnTxtClr:string='';
 
 // @HostBinding('style.background-color') myBgClr:string='blue'
-@HostBinding('style.color') mycolor:string=''
+// @HostBinding('style.color') mycolor:string=''
 ngOnInit(){
     // the HostBinding did not work with background color so I had to do the workaround
     this.bgclr="background-color:"+this.bgclr;
-    this.mycolor=this.colorFromParent
+    // this.mycolor=this.titleColorFromParent
 }
 }
 
