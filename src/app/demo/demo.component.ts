@@ -1,24 +1,25 @@
-import { Component, HostBinding, Input } from '@angular/core';
+
+import { Component,HostBinding,Input, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-demo',
-  templateUrl: './demo.component.html',
-  styleUrls: ['./demo.component.css']
+    selector:'app-demo',
+    templateUrl:'./demo.component.html',
+    styleUrls:['./demo.component.css']
+
 })
-export class DemoComponent {
+export class DemoComponent implements OnInit {
+@Input() title:string='';
+@Input() btn:string='';
+@Input() colorFromParent:string='';
+@Input() bgclr:string='';
 
-  
 
-  @Input() colorFromParent:string='';
-  @Input() title:string='Title';
-  @Input() btn:string='Button';
-  @Input() bgclr:string='';
-
-  @HostBinding('style.color') mycolor='';
-  @HostBinding('style.backgroundcolor') myBgClr=''
-  ngOnInit(){
-    this.mycolor = this.colorFromParent;
-    this.myBgClr = "background-color:"+this.bgclr;
-    console.log(this.myBgClr)
-  }
+// @HostBinding('style.background-color') myBgClr:string='blue'
+@HostBinding('style.color') mycolor:string=''
+ngOnInit(){
+    // the HostBinding did not work with background color so I had to do the workaround
+    this.bgclr="background-color:"+this.bgclr;
+    this.mycolor=this.colorFromParent
 }
+}
+

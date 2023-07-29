@@ -1,9 +1,13 @@
 <div class="container">
+
+  <div app-class-Directive [customNgClass]="{class1:condition1,class2:condition2}" myBorder></div>
+
   <div
   app-class-Directive
   [customNgClass]="{class1:condition1,class2:condition2}"
   myBorder
   [myClasses]="{class3:condition3,class4:condition4}">
+
     <h2>App Component Works!!</h2>
   </div>
   
@@ -23,6 +27,7 @@
   [btn]="'Save'"
   [bgclr]="'green'">
   </app-demo>
-  
-  
+
 </div>
+
+
