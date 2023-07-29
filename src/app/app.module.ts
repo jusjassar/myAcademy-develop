@@ -6,8 +6,8 @@ import { DemoComponent } from './demo/demo.component';
 import { HostBindingDirective } from './customDirectives/host-binding.directive';
 
 @NgModule({
-  declarations: [
-    AppComponent,
+  declarations:
+  [AppComponent,
     DemoComponent,
     HostBindingDirective
   ],
