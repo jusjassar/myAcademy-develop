@@ -11,6 +11,7 @@ import { HostBindingDirective } from './customDirectives/host-binding.directive'
 
 
 @NgModule({
+
   declarations: [
     AppComponent,
     AppClassDirective,
