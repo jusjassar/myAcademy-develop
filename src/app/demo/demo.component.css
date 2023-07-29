@@ -1,0 +1,11 @@
+.btn-border{
+    border-radius:10px;
+    border:2px solid transparent;
+}
+.btn-size{
+    width: 150px;
+    height: 40px;
+    font-size: large;
+    font-weight:bolder;
+    color:red;
+}

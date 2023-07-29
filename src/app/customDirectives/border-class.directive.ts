@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Input, OnInit, Renderer2 } from "@angular/core";
+import { Directive, ElementRef, HostBinding, Input, OnInit, Renderer2 } from "@angular/core";
 
 @Directive({
     selector:'[myBorder]'
@@ -8,6 +8,9 @@ export class myBorderDirective implements OnInit {
     constructor(private element:ElementRef,private renderer:Renderer2){}
 
     @Input() myClasses:Object={};
+    @Input() borderFromParent:string='';
+
+    @HostBinding('style.border') borderselect:string=this.borderFromParent
 
     ngOnInit(){
         // console.log(this.myClasses)

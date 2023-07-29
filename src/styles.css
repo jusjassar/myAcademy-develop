@@ -8,7 +8,8 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 font-size: larger;
 }
 .class3{
-    border:4px sandybrown solid
+    border:4px sandybrown solid;
+    margin:20px;
 }
 .class4{
     border-radius:20px;
@@ -17,6 +18,8 @@ font-size: larger;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    
+}
+.container{
+    margin: auto;
+    width: 50%;
 }
