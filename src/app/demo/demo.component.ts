@@ -1,3 +1,4 @@
+
 import { Component,HostBinding,Input, OnInit } from "@angular/core";
 
 @Component({
@@ -21,3 +22,4 @@ ngOnInit(){
     this.mycolor=this.colorFromParent
 }
 }
+
