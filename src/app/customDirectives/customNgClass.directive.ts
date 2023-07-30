@@ -9,6 +9,12 @@ export class MyNgClassDirective {
 
     @Input() set classChoice(value:Object){
         console.log(value)
+       let entries = Object.entries(value)
+        for ( let [className,condition] of entries){
+            if(condition){
+                this.renderer.addClass(this.element.nativeElement,className)
+            }
+        }
     }
 
 }

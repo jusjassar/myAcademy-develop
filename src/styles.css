@@ -22,8 +22,26 @@ font-size: larger;
 .container{
     margin: auto;
     margin:20px auto;
-    width: 50%;
+    width: 80%;
     border:3px solid green;
     background-color:gainsboro;
     border-radius: 10px;
+}
+.products{
+    display: flex;
+    text-align: center;
+}
+
+.btn-border{
+    border-radius:10px;
+    border:2px solid transparent;
+    margin: 5px;
+    background-color: green;
+}
+.btn-size{
+    width: 150px;
+    height: 50%;
+    font-size: large;
+    /* font-weight:bold; */
+  
 }

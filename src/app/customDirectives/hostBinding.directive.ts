@@ -11,7 +11,9 @@ export class TitleColorDirective implements OnInit {
 @HostBinding('style.color') mybtnTxtClr:string='';
 
 ngOnInit(): void {
-    this.myTitleColor=this.titleColorFromParent;
     this.mybtnTxtClr=this.btnTxtClrFromParent
+    this.myTitleColor=this.titleColorFromParent;
+    
+    console.log(this.myTitleColor)
 }
 }
