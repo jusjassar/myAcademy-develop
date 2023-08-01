@@ -1,6 +1,8 @@
 <div class="container">
 
-  <div app-class-Directive [customNgClass]="{class1:condition1,class2:condition2}" myBorder></div>
+  <div app-class-Directive 
+  [customNgClass]="{class1:condition1,class2:condition2}" 
+  myBorder></div>
 
   <div
   app-class-Directive
@@ -29,6 +31,13 @@
   [bgclr]="'green'"
   [btnTxtClr]="'yellow'">
   </app-demo>
+
+  <div class="container" class="products">
+    <app-products [company]="'Samsung'" myng-Class [classChoice]="{class1:condition1,class2:condition2}"></app-products>
+    <app-products [company]="'Iphone'"></app-products>
+    <app-products [company]="'MiPhone'"></app-products>
+    <app-products [company]="'OnePlus'"></app-products>
+  </div>
 
 </div>
 

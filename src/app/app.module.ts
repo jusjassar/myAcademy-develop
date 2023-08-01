@@ -7,6 +7,8 @@ import { myBorderDirective } from './customDirectives/border-class.directive';
 import { DemoComponent } from './demo/demo.component';
 import { HostBindingDirective } from './customDirectives/host-binding.directive';
 import { TitleColorDirective } from './customDirectives/hostBinding.directive';
+import { ProductsComponent } from './products/products.component';
+import { MyNgClassDirective } from './customDirectives/customNgClass.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,9 @@ import { TitleColorDirective } from './customDirectives/hostBinding.directive';
     myBorderDirective,
     DemoComponent,
     HostBindingDirective,
-    TitleColorDirective
+    TitleColorDirective,
+    ProductsComponent,
+    MyNgClassDirective
 
   ],
 
