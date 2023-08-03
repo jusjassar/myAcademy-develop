@@ -1,4 +1,5 @@
 import { Component, OnChanges, OnInit } from '@angular/core';
+import { MyService } from './my.service';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,10 @@ export class AppComponent implements OnChanges {
     // console.log(videosCopy.sort((current,next)=> next.likes - current.likes)[0].likes)
     // console.log(videosCopy[2].likes)
     return videosCopy.sort((current,next)=> next.likes - current.likes)[0];
-     
+  }
+
+  clicked(data:Event){
+    const prnt = new MyService;
+    prnt.clickME(data)
   }
 }
