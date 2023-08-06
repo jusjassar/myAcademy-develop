@@ -1,0 +1,27 @@
+<div class="parent">
+    <div>
+        <label for="" class="input" >UserName</label>
+        <input type="text" class="input" placeholder="Enter UserName" #inputref><br><br>
+        <label for="status" class="input">status</label>
+        <select name="staus" id="statu" #statusref>
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+        </select>
+        <button class="input" (click)="adduser(inputref.value,statusref.value)">AddUser</button>
+    </div>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            <tr *ngFor="let user of users">
+                <td>{{user.name}}</td>
+                <td>{{user.status}}</td>
+                <button (click)="detailsMethod(user)">showDetails</button>
+            </tr>
+        </table>
+    </div>
+    
+</div>

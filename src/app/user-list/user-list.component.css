@@ -6,11 +6,12 @@
 
 }
 
-th,td,tr{
+th,td,tr,table button{
   border: 1px solid blue;
-  width: 300px;
+  width: 200px;
   text-align: center;
   height: 30px;
+  border-radius: 10px;
   
 }
 table{
