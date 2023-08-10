@@ -22,7 +22,7 @@ import { CoursesService } from './Services/courses.service';
   imports: [
     BrowserModule
   ],
-  providers: [CoursesService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
