@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CoursesService } from '../Services/courses.service';
-import { Course } from '../courses.interface';
 
 
 @Component({
@@ -12,7 +11,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private coursesService: CoursesService) { }
 
-  courses:Course[]= [];
+  courses:= [];
 
   ngOnInit(): void {
     this.courses = this.coursesService.courses;
