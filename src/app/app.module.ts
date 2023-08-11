@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { CoursesComponent } from './courses/courses.component';
+import { CoursesService } from './Services/courses.service';
 
 
 
@@ -16,7 +17,6 @@ import { CoursesComponent } from './courses/courses.component';
     AboutComponent,
     ContactComponent,
     CoursesComponent,
-    
     
   ],
   imports: [
